@@ -43,7 +43,7 @@ export function Navbar() {
   ];
 
   return (
-    <div className="bg-white w-full h-20 ">
+    <div className="bg-white w-full h-32 ">
       <div className="flex flex-row justify-between items-center px-20">
         <div className="flex-1 hidden md:flex flex-row items-center">
           <Image src="/images/vercel.svg" width={100} height={100} />
@@ -64,8 +64,8 @@ export function Navbar() {
           </div>
         </div>
       </div>
-      <div onClick={handleNav} className="md:hidden float-right px-20 mt-5">
-        <AiOutlineMenu size={25} />
+      <div onClick={handleNav} className="md:hidden float-right px-20 mt-10">
+        <AiOutlineMenu size={30} />
       </div>
       <div
         className={
@@ -75,7 +75,7 @@ export function Navbar() {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -84,7 +84,7 @@ export function Navbar() {
               <Link href="/">
                 <a>
                   <Image
-                    src="/vercel.svg"
+                    src="/images/vercel.svg"
                     alt="/"
                     width="125"
                     height="50"
@@ -96,21 +96,18 @@ export function Navbar() {
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
-                <AiOutlineClose />
+                <AiOutlineClose size={20} />
               </div>
-            </div>
-
-            <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
-                Let&#39;s build something legendary together
-              </p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               {NavbarTopic.map((navbar, index) => (
                 <Link key={index} href={navbar.path}>
-                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  <li
+                    onClick={() => setNav(false)}
+                    className=" text-xl font-light text-black hover:border-b-4 w-1/4 border-blue-800 p-4"
+                  >
                     {navbar.text}
                   </li>
                 </Link>
