@@ -29,8 +29,8 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute top-1/2 right-0 flex flex-col">
-        <div className="h-full bg-blue-900 text-white px-5 flex items-center justify-center hover:w-96 mb-5">
+      <div className="flex flex-col w-24 float-right mt-56">
+        <div className="h-full bg-blue-900 text-white px-5 flex items-center justify-center hover:pr-10">
           <FaFacebookF size={30} />
         </div>
 
