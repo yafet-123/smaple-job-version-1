@@ -2,7 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 
@@ -11,12 +16,12 @@ export function Navbar() {
   const [shadow, setShadow] = useState(false);
   const MainList = [
     {
-      path: "https://www.linkedin.com/in/yafet-addisu-525107249/",
-      icon: <FaLinkedinIn />,
+      path: "",
+      icon: <FaFacebookF />,
     },
-    { path: "https://github.com/yafet-123", icon: <FaGithub /> },
-    { path: "/#contact", icon: <AiOutlineMail /> },
-    { path: "/resume", icon: <BsFillPersonLinesFill /> },
+    { path: "", icon: <FaTwitter /> },
+    { path: "", icon: <FaLinkedinIn /> },
+    { path: "", icon: <FaYoutube /> },
   ];
 
   const handleNav = () => {
