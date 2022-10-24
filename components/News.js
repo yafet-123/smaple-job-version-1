@@ -1,7 +1,8 @@
 import React from "react";
 
 export function News() {
-  return <div className="bg-white w-full h-[40rem] p-20">
+  return (
+    <div className="bg-white w-full h-[40rem] p-20">
       <h1 className="text-center w-full uppercase text-[2.75rem] font-bold">
         carrer advice
       </h1>
@@ -49,3 +50,5 @@ export function News() {
         </Link>
       </div>
     </div>
+  );
+}
