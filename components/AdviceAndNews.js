@@ -14,18 +14,26 @@ export function AdviceAndNews() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <div className="flex items-center justify-center">
-          <Image src="/images/jobSearch.jpg" width={75} height={75} />
-          <h1>job search tips</h1>
+        <div className="flex flex-col items-center justify-center">
+          <div className="border border-slate-300 rounded-xl p-5 mb-10">
+            <Image src="/images/jobSearch.jpg" width={75} height={75} />
+          </div>
+
+          <h1 className="text-3xl text-blue-800 capitalize">job search tips</h1>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <Image src="/images/jobInterview.jpg" width={75} height={75} />
+          <h1 className="text-3xl text-blue-800 capitalize">
+            job interview tips
+          </h1>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <Image src="/images/cv.jpg" width={75} height={75} />
+          <h1 className="text-3xl text-blue-800 capitalize">cv tips</h1>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <Image src="/images/Careeradvice.jpg" width={75} height={75} />
+          <h1 className="text-3xl text-blue-800 capitalize">carrer Advice</h1>
         </div>
       </div>
     </div>
