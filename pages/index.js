@@ -1,3 +1,4 @@
+import { AdviceAndNews } from "../components/AdviceAndNews";
 import { Hero } from "../components/Hero";
 import { Navbar } from "../components/Navbar";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="">
       <Navbar />
       <Hero />
+      <AdviceAndNews />
     </div>
   );
 }

@@ -9,7 +9,7 @@ import {
 import { CiTwitter } from "react-icons/ci";
 export function Hero() {
   return (
-    <div className="w-full h-screen lg:h-[50rem] hero-background ">
+    <div className="w-full h-screen lg:h-[40rem] hero-background ">
       <div className="hidden md:flex flex-col w-14 pt-56">
         <div className="h-full bg-blue-900 text-white px-5 hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center">
           <FaFacebookF size={20} />
