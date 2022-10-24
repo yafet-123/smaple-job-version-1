@@ -10,14 +10,32 @@ import { CiTwitter } from "react-icons/ci";
 export function Hero() {
   return (
     <div className="w-full h-[50rem] hero-background ">
-      <div className="flex flex-col absolute top-1/2 bottom-1/2 w-full lg:w-[40rem] h-96 mx-20">
+      <div className="flex flex-col w-14 pt-56">
+        <div className="h-full bg-blue-900 text-white px-5 hover:w-20 transition duration-1000 transform cursor-pointer hover:brightness-110 flex items-center justify-center hover:pr-10">
+          <FaFacebookF size={20} />
+        </div>
+
+        <div className="h-full bg-blue-500 text-white px-5 hover:w-20 transition duration-150 transform cursor-pointer hover:brightness-110 flex items-center justify-center">
+          <FaTwitter size={20} />
+        </div>
+
+        <div className="h-full bg-blue-700 text-white px-5 hover:w-20 transition duration-150 transform cursor-pointer hover:brightness-110 flex items-center justify-center">
+          <FaLinkedinIn size={20} />
+        </div>
+
+        <div className="h-full bg-red-500 text-white px-5  hover:w-20 transition duration-150 transform cursor-pointer hover:brightness-110 flex items-center justify-center">
+          <FaYoutube size={20} />
+        </div>
+      </div>
+
+      <div className="flex flex-col absolute right-0 top-1/2 bottom-1/2 w-full lg:w-[40rem] h-96 mx-20">
         <h1 className="text-5xl mb-5 ">Better Job. Better Talent</h1>
         <div className="flex mb-5">
           <p className="text-xl mr-10">Jobs</p>
           <p className="text-xl">Companies</p>
         </div>
 
-        <div className="flex h-16">
+        <div className="flex h-16 ">
           <div className="h-full bg-blue-800 text-white px-5 flex items-center justify-center">
             <AiOutlineSearch size={20} />
           </div>
@@ -26,24 +44,6 @@ export function Hero() {
           <p className="text-2xl text-white bg-yellow-600 px-7 flex items-center justify-center">
             Search
           </p>
-        </div>
-      </div>
-
-      <div className="flex flex-col w-24 float-right mt-56">
-        <div className="h-full bg-blue-900 text-white px-5 flex items-center justify-center hover:pr-10">
-          <FaFacebookF size={30} />
-        </div>
-
-        <div className="h-full bg-blue-500 text-white px-5 flex items-center justify-center">
-          <FaTwitter size={30} />
-        </div>
-
-        <div className="h-full bg-blue-700 text-white px-5 flex items-center justify-center">
-          <FaLinkedinIn size={30} />
-        </div>
-
-        <div className="h-full bg-red-500 text-white px-7 flex items-center justify-center">
-          <FaYoutube size={30} />
         </div>
       </div>
     </div>
