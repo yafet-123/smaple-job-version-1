@@ -11,19 +11,19 @@ export function Hero() {
   return (
     <div className="w-full h-[50rem] hero-background ">
       <div className="flex flex-col w-14 pt-56">
-        <div className="h-full bg-blue-900 text-white px-5 hover:w-20 transition duration-1000 transform cursor-pointer hover:brightness-110 flex items-center justify-center hover:pr-10">
+        <div className="h-full bg-blue-900 text-white px-5 hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center">
           <FaFacebookF size={20} />
         </div>
 
-        <div className="h-full bg-blue-500 text-white px-5 hover:w-20 transition duration-150 transform cursor-pointer hover:brightness-110 flex items-center justify-center">
+        <div className="h-full bg-blue-500 text-white px-5 hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center">
           <FaTwitter size={20} />
         </div>
 
-        <div className="h-full bg-blue-700 text-white px-5 hover:w-20 transition duration-150 transform cursor-pointer hover:brightness-110 flex items-center justify-center">
+        <div className="h-full bg-blue-700 text-white px-5 hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center">
           <FaLinkedinIn size={20} />
         </div>
 
-        <div className="h-full bg-red-500 text-white px-5  hover:w-20 transition duration-150 transform cursor-pointer hover:brightness-110 flex items-center justify-center">
+        <div className="h-full bg-red-500 text-white px-5  hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center">
           <FaYoutube size={20} />
         </div>
       </div>
