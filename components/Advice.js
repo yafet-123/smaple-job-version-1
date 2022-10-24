@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export function AdviceAndNews() {
+export function Advice() {
   return (
     <div className="bg-white w-full h-[40rem] p-20">
       <h1 className="text-center w-full uppercase text-[2.75rem] font-bold">
