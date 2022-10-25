@@ -14,7 +14,7 @@ export function Advice() {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <Link href="/">
-          <a className="flex flex-col items-center justify-center">
+          <a className="flex flex-col items-center justify-center mb-5">
             <div className="border border-slate-300 rounded-xl p-5 mb-10">
               <Image src="/images/jobSearch.jpg" width={75} height={75} />
             </div>
@@ -25,7 +25,7 @@ export function Advice() {
           </a>
         </Link>
         <Link href="/">
-          <a className="flex flex-col items-center justify-center">
+          <a className="flex flex-col items-center justify-center mb-5">
             <div className="border border-slate-300 rounded-xl p-5 mb-10">
               <Image src="/images/jobInterview.jpg" width={75} height={75} />
             </div>
@@ -35,7 +35,7 @@ export function Advice() {
           </a>
         </Link>
         <Link href="/">
-          <a className="flex flex-col items-center justify-center">
+          <a className="flex flex-col items-center justify-center mb-5">
             <div className="border border-slate-300 rounded-xl p-5 mb-10">
               <Image src="/images/cv.jpg" width={75} height={75} />
             </div>
@@ -43,7 +43,7 @@ export function Advice() {
           </a>
         </Link>
         <Link href="/">
-          <a className="flex flex-col items-center justify-center">
+          <a className="flex flex-col items-center justify-center mb-5">
             <div className="border border-slate-300 rounded-xl p-5 mb-10">
               <Image src="/images/Careeradvice.jpg" width={75} height={75} />
             </div>
