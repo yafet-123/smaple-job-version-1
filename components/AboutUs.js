@@ -19,14 +19,9 @@ export function AboutUs() {
           ipsum, pulvinar laoreet odio eleifend nec.
         </p>
       </div>
-      <div className="w-full md:w-1/2">
-        <div className="w-96 h-96 border rounded-full bg-amber-700 relative float-right">
-          <Image
-            src="/images/bgImage3.avif"
-            width={384}
-            height={384}
-            className="border rounded-full absolute top-10 left-10"
-          />
+      <div className="w-full md:w-1/2 relative">
+        <div className="w-[30rem] h-[30rem] border rounded-full bg-amber-700 relative float-right">
+          <div className="news-background w-[30rem] h-[30rem] border rounded-full absolute right-40 top-20"></div>
         </div>
       </div>
     </div>
