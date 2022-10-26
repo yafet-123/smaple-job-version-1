@@ -20,22 +20,22 @@ export function LatestJobs() {
       <div className="max-w-3xl mx-auto bg-gray-200 w-full h-[40rem] border rounded-lg mt-10 shadow-2xl shadow-sky-200 flex flex-col overflow-y-scroll">
         {LatestJobsList.map((data, index) => (
           <div
-            className="flex justify-around items-center mb-5 even:bg-white px-10 py-5"
+            className="flex justify-around items-center mb-5 even:bg-white px-10 py-5 group"
             key={index}
           >
             <div className="flex flex-col w-1/2">
-              <h1 className="font-bold text-sm md:text-lg lg:text-xl text-blue-700 ">
+              <h1 className="font-bold text-sm md:text-lg lg:text-xl group-hover:text-2xl text-blue-500 group-hover:text-green-900">
                 {data.job}
               </h1>
-              <h1 className="font-light text-xs md:text-sm lg:text-lg text-blue-700">
+              <h1 className="font-light text-xs md:text-sm lg:text-lg group-hover:text-xl text-blue-500 group-hover:text-green-900">
                 {data.company}
               </h1>
             </div>
             <div className="flex flex-col w-1/2">
-              <h1 className="font-light text-xs md:text-sm lg:text-lg text-black text-right">
+              <h1 className="font-light text-xs md:text-sm lg:text-lg group-hover:text-2xl text-black text-right group-hover:text-yellow-900">
                 {data.createDate}
               </h1>
-              <h1 className="font-light text-xs md:text-sm lg:text-lg text-black text-right">
+              <h1 className="font-light text-xs md:text-sm lg:text-lg group-hover:text-2xl text-black text-right group-hover:text-yellow-900">
                 {data.location}
               </h1>
             </div>
