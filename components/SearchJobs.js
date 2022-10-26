@@ -10,8 +10,8 @@ export function SearchJobs() {
       <div className="w-full h-[55rem] border rounded-xl border-slate-800 shadow-2xl shadow-sky-200 overflow-y-scroll">
         <div className="grid md:grid-cols-3 gap-5 px-20 py-10">
           {LatestJobsList.map((index, data) => (
-            <div className="flex justify-between items-center mb-5">
-              <h1 className="font-normal text-sm md:text-lg lg:text-xl capitalize">
+            <div className="flex justify-between items-center mb-5 group">
+              <h1 className="font-normal text-sm md:text-lg lg:text-xl capitalize group-hover:text-slate-500">
                 Accounting finance
               </h1>
               <h1 className="px-5 py-2 border rounded-xl border-gray-200 text-blue-800 font-bold text-sm md:text-lg lg:text-xl">
