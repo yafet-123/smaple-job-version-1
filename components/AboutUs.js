@@ -8,7 +8,7 @@ export function AboutUs() {
           {" "}
           About Us
         </h1>
-        <p className="text-center italic capitalize text-xl xl:text-2xl font-normal leading-[6rem] w-full mb-5">
+        <p className="text-center italic capitalize text-xl xl:text-2xl font-normal leding-[4rem] md:leading-[6rem] w-full mb-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
           justo nulla. In blandit vulputate leo at vehicula. Nunc bibendum
           ligula eu sollicitudin scelerisque. Etiam dapibus felis ligula, non
