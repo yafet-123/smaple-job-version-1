@@ -9,7 +9,7 @@ import {
 import { CiTwitter } from "react-icons/ci";
 export function Hero() {
   return (
-    <div className="w-full h-screen lg:h-[40rem] hero-background ">
+    <div className="hero-background w-full h-screen lg:h-[40rem]">
       <div className="hidden md:flex flex-col w-14 pt-56">
         <div className="h-full bg-blue-900 text-white px-5 hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center">
           <FaFacebookF size={20} />
@@ -28,7 +28,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="flex flex-col absolute right-0 top-1/2 bottom-1/2 w-full md:w-[40rem] h-96 px-5">
+      <div className="flex flex-col float-right m-auto w-full md:w-[40rem] h-96 px-5">
         <h1 className="text-5xl mb-5 ">Better Job. Better Talent</h1>
         <div className="flex mb-5">
           <p className="text-xl mr-10">Jobs</p>
