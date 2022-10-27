@@ -2,7 +2,7 @@ import React from "react";
 import { LatestJobsList } from "../data/LatestJobs";
 import Link from "next/link";
 import { BiCategory } from "react-icons/bi";
-import { CiLocationOn } from "react-icons/ci";
+import { GoLocation } from "react-icons/go";
 import { useState } from "react";
 export function SearchJobs() {
   const [jobs, setJobs] = useState("");
@@ -48,7 +48,7 @@ export function SearchJobs() {
             onClick={(e) => setJobs("location")}
             className="py-3 px-6 bg-gray-200 border border-slate-300 flex items-center hover:bg-white hover:text-blue-400"
           >
-            <CiLocationOn size={20} />
+            <GoLocation size={20} />
             <span className="hidden lg:inline-flex text-xl ml-3">
               Jobs by Location
             </span>
