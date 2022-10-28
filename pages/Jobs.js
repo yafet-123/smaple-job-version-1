@@ -61,18 +61,46 @@ export default function SearchJobs() {
                     key={index}
                   >
                     <div className="flex flex-col">
-                      <h1 className="font-bold text-sm md:text-lg text-blue-500 group-hover:text-green-900">
+                      <h1 className="font-normal text-sm md:text-lg text-blue-500 group-hover:text-orange-500">
                         {data.job}
                       </h1>
-                      <h1 className="font-light text-xs md:text-sm text-blue-500 group-hover:text-green-900">
+                      <h1 className="font-light text-xs md:text-sm group-hover:text-orange-500">
                         {data.company}
                       </h1>
                     </div>
                     <div className="flex flex-col">
-                      <h1 className="font-light text-xs md:text-sm group-hover:text-2xl text-black text-right group-hover:text-yellow-900">
+                      <h1 className="font-light text-xs md:text-lg text-right group-hover:text-orange-500">
                         {data.createDate}
                       </h1>
-                      <h1 className="font-light text-xs md:text-sm group-hover:text-2xl text-black text-right group-hover:text-yellow-900">
+                      <h1 className="font-light text-xs md:text-lg text-right group-hover:text-orange-500">
+                        {data.location}
+                      </h1>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {jobs == "government" && (
+              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 px-20 py-10">
+                {LatestJobsList.map((data, index) => (
+                  <div
+                    className="flex justify-between items-center mb-3 group hover:bg-gray-200 px-4 py-2"
+                    key={index}
+                  >
+                    <div className="flex flex-col">
+                      <h1 className="font-normal text-sm md:text-lg text-blue-500 group-hover:text-orange-500">
+                        {data.job}
+                      </h1>
+                      <h1 className="font-light text-sm md:text-lg group-hover:text-orange-500">
+                        {data.company}
+                      </h1>
+                    </div>
+                    <div className="flex flex-col">
+                      <h1 className="font-light text-xs md:text-lg text-right group-hover:text-orange-500">
+                        {data.createDate}
+                      </h1>
+                      <h1 className="font-light text-xs md:text-lg text-right group-hover:text-orange-500">
                         {data.location}
                       </h1>
                     </div>
@@ -109,7 +137,6 @@ export default function SearchJobs() {
               Jobs by Location
             </span>
           </li>
-
           <li
             onClick={(e) => setJobs("latest")}
             className={
@@ -121,6 +148,19 @@ export default function SearchJobs() {
             <GoLocation size={20} />
             <span className="hidden lg:inline-flex text-xl ml-3 capitalize">
               View latest jobs
+            </span>
+          </li>
+          <li
+            onClick={(e) => setJobs("government")}
+            className={
+              jobs == "government"
+                ? "py-3 bg-white px-6 border border-slate-300 flex items-center hover:text-blue-400 border-x-white -ml-1"
+                : "py-3 bg-gray-200 px-6 border border-slate-300 flex items-center hover:bg-white hover:text-blue-400"
+            }
+          >
+            <GoLocation size={20} />
+            <span className="hidden lg:inline-flex text-xl ml-3 capitalize">
+              Jobs in government
             </span>
           </li>
         </ul>
