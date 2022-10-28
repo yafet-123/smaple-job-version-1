@@ -5,16 +5,44 @@ import { BiCategory } from "react-icons/bi";
 import { GoLocation } from "react-icons/go";
 import { useState } from "react";
 import { JobsByLocation } from "../data/JobsByLocation";
-export function SearchJobs() {
+export default function SearchJobs() {
   const [jobs, setJobs] = useState("category");
   console.log(jobs);
   return (
-    <div className="flex flex-col w-full h-full py-20 px-7 md:px-32">
+    <section className="flex flex-col w-full h-full py-20 px-7 md:px-32 bg-gray-200">
       <h1 className="font-light text-2xl md:text-3xl lg:text-4xl capitalize mb-5 text-center md:text-left">
         Search and Find Jobs in Ethiopia
       </h1>
       <hr className="w-full bg-gray-200 mb-5" />
-      <div className="flex w-full h-full lg:h-[45rem]">
+      <div className="flex w-full h-full lg:h-[45rem] bg-white p-3 border rounded-xl">
+        <ul className="mt-5">
+          <li
+            onClick={(e) => setJobs("category")}
+            className={
+              jobs == "category"
+                ? "py-3 bg-white px-6 border border-slate-300 flex items-center hover:text-blue-400 border-x-white pr-10"
+                : "py-3 bg-gray-200 px-6 border border-slate-300 flex items-center hover:bg-white hover:text-blue-400"
+            }
+          >
+            <BiCategory size={20} />
+            <span className="hidden lg:inline-flex text-xl ml-3">
+              Jobs by Category
+            </span>
+          </li>
+          <li
+            onClick={(e) => setJobs("location")}
+            className={
+              jobs == "location"
+                ? "py-3 bg-white px-6 border border-slate-300 flex items-center hover:text-blue-400 border-x-transparent z-10 -mr-[0.025]"
+                : "py-3 bg-gray-200 px-6 border border-slate-300 flex items-center hover:bg-white hover:text-blue-400"
+            }
+          >
+            <GoLocation size={20} />
+            <span className="hidden lg:inline-flex text-xl ml-3">
+              Jobs by Location
+            </span>
+          </li>
+        </ul>
         <div className="flex-1 px-5 border rounded-xl shadow-2xl shadow-sky-200 border-slate-300  p-3">
           <div className="w-full h-full overflow-y-scroll">
             {jobs == "category" ? (
@@ -52,36 +80,7 @@ export function SearchJobs() {
             )}
           </div>
         </div>
-
-        <ul className="mt-5">
-          <butliton
-            onClick={(e) => setJobs("category")}
-            className={
-              jobs == "category"
-                ? "py-3 bg-white px-6 border border-slate-300 flex items-center hover:text-blue-400 border-x-white -ml-1"
-                : "py-3 bg-gray-200 px-6 border border-slate-300 flex items-center hover:bg-white hover:text-blue-400"
-            }
-          >
-            <BiCategory size={20} />
-            <span className="hidden lg:inline-flex text-xl ml-3">
-              Jobs by Category
-            </span>
-          </butliton>
-          <li
-            onClick={(e) => setJobs("location")}
-            className={
-              jobs == "location"
-                ? "py-3 bg-white px-6 border border-slate-300 flex items-center hover:text-blue-400 border-x-transparent z-10 -ml-1"
-                : "py-3 bg-gray-200 px-6 border border-slate-300 flex items-center hover:bg-white hover:text-blue-400"
-            }
-          >
-            <GoLocation size={20} />
-            <span className="hidden lg:inline-flex text-xl ml-3">
-              Jobs by Location
-            </span>
-          </li>
-        </ul>
       </div>
-    </div>
+    </section>
   );
 }
