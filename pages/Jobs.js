@@ -5,6 +5,7 @@ import { GoLocation } from "react-icons/go";
 import { useState } from "react";
 import { JobsByLocation } from "../data/JobsByLocation";
 import { LatestJobsList } from "../data/LatestJobs";
+import { GovernmentJobs } from "../data/GovernmentJobs";
 export default function SearchJobs() {
   const [jobs, setJobs] = useState("category");
   console.log(jobs);
@@ -83,7 +84,7 @@ export default function SearchJobs() {
 
             {jobs == "government" && (
               <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 px-20 py-10">
-                {LatestJobsList.map((data, index) => (
+                {GovernmentJobs.map((data, index) => (
                   <div
                     className="flex justify-between items-center mb-3 group hover:bg-gray-200 px-4 py-2"
                     key={index}
