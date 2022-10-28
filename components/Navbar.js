@@ -14,6 +14,7 @@ import Link from "next/link";
 export function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [NavabarText, setNavabarText] = useState("Home");
   const MainList = [
     {
       path: "",
@@ -54,7 +55,14 @@ export function Navbar() {
           <Image src="/images/vercel.svg" width={100} height={100} />
           {NavbarTopic.map((navbar, index) => (
             <Link key={index} href={navbar.path}>
-              <a className="ml-20 text-2xl font-light text-black hover:border-b-4 border-blue-800">
+              <a
+                onClick={(e) => setNavabarText(navbar.text)}
+                className={
+                  navbar.text == NavabarText
+                    ? "border-b-4 border-blue-800 ml-20 text-2xl font-light text-black"
+                    : "ml-20 text-2xl font-light text-black hover:border-b-4 border-blue-800"
+                }
+              >
                 {navbar.text}
               </a>
             </Link>
