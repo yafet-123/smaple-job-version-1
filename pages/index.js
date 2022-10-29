@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
+      <History />
       <SearchJobs />
       <LatestJobs />
       <News />
       <Advice />
-      <History />
     </div>
   );
 }

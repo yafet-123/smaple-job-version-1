@@ -22,9 +22,9 @@ export function Footer() {
   ];
 
   const aboutUsLinks = [
-    { link: "History" },
-    { link: "Mission/Vision" },
-    { link: "Our Team" },
+    { link: "History", path: "/#History" },
+    { link: "Mission/Vision", path: "" },
+    { link: "Our Team", path: "" },
   ];
 
   return (
@@ -75,7 +75,7 @@ export function Footer() {
             <h1 className="text-xl font-bold">About Us</h1>
             {aboutUsLinks.map((links, index) => {
               return (
-                <Link key={index} href="#">
+                <Link key={index} href={links.path}>
                   <a className=" text-lg hover:text-orange-500">{links.link}</a>
                 </Link>
               );
