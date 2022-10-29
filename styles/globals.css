@@ -15,3 +15,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.mission-vision-background {
+  background-image: url("../public/images/bgImage4.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

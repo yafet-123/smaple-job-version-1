@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export function History() {
   return (
-    <section id="History" className="bg-white w-full p-40 px-5 md:px-96">
+    <section id="History" className="bg-white w-full pt-40 pb-20 px-5 md:px-96">
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
         <div className="flex flex-col w-full lg:w-130 px-10 lg:px-0">
           <h1 className="text-amber-800 font-bold text-4xl md:text-5xl my-4">

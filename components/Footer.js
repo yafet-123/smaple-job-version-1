@@ -23,7 +23,7 @@ export function Footer() {
 
   const aboutUsLinks = [
     { link: "History", path: "/#History" },
-    { link: "Mission/Vision", path: "" },
+    { link: "Mission/Vision", path: "/#MissionAndVision" },
     { link: "Our Team", path: "" },
   ];
 
