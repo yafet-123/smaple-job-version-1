@@ -2,28 +2,30 @@ import React from "react";
 import Image from "next/image";
 export function History() {
   return (
-    <div className="bg-[#e0ded8] w-full h-full lg:h-screen flex flex-col md:flex-row justify-between items-center mt-5">
-      <div className="w-full md:w-1/2 pt-20 md:pt-20 px-20">
-        <h1 className="text-center w-full uppercase text-5xl xl:text-6xl font-medium mb-5">
-          {" "}
-          About Us
-        </h1>
-        <p className="text-center italic capitalize text-lg xl:text-xl font-normal leding-[4rem] md:leading-[6rem] w-full mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
-          justo nulla. In blandit vulputate leo at vehicula. Nunc bibendum
-          ligula eu sollicitudin scelerisque. Etiam dapibus felis ligula, non
-          blandit ipsum sollicitudin a. Vestibulum ut ex nec erat tempus laoreet
-          sed ac felis. Mauris tempor sit amet tortor vel consectetur. Cras
-          ultricies lectus laoreet purus pellentesque, ac cursus nibh aliquam.
-          Nulla venenatis vestibulum libero at bibendum. Nullam molestie elit
-          ipsum, pulvinar laoreet odio eleifend nec.
-        </p>
-      </div>
-      <div className="w-full md:w-1/2 relative pt-20 md:pt-0 px-0 md:px-20">
-        <div className="w-96 md:w-[30rem] h-96 md:h-[30rem] border rounded-full bg-transparent lg:bg-amber-700 relative lg:float-right mx-auto md:mx-0">
-          <div className="news-background w-96 md:w-[30rem] h-96 md:h-[30rem] border rounded-full absolute right-0 lg:right-40 top-0 lg:top-20"></div>
+    <section className="bg-white w-full pb-40 px-5 md:px-96">
+      <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+        <div className="flex flex-col w-full lg:w-130 px-10 lg:px-0">
+          <h1 className="text-amber-800 font-bold text-4xl md:text-5xl my-4">
+            {" "}
+            We are Hulu Media
+          </h1>
+          <p className="text-textblack text-left md:text-lg my-2 w-full ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
+            justo nulla. In blandit vulputate leo at vehicula. Nunc bibendum
+            ligula eu sollicitudin scelerisque. Etiam dapibus felis ligula, non
+            blandit ipsum sollicitudin a. Vestibulum ut ex nec erat tempus
+            laoreet sed ac felis. Mauris tempor sit amet tortor vel consectetur.
+            Cras ultricies lectus laoreet purus pellentesque, ac cursus nibh
+            aliquam. Nulla venenatis vestibulum libero at bibendum. Nullam
+            molestie elit ipsum, pulvinar laoreet odio eleifend nec.
+          </p>
+        </div>
+        <div className="flex flex-row mt-10 md:mt-0 lg:mb-40">
+          <div className="lg:inline-flex relative w-96 h-96 border rounded-full bg-transparent lg:bg-amber-700">
+            <div className="lg:absolute lg:bottom-1/4 lg:left-2/4 news-background w-96 h-96 border rounded-full mx-auto lg:mx-0"></div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
