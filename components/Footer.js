@@ -1,19 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 export function Footer() {
   const socialMediaLinks = [
-    { path: "/icons/icon-facebook.svg" },
-    { path: "/icons/icon-youtube.svg" },
-    { path: "/icons/icon-twitter.svg" },
-    { path: "/icons/icon-instagram.svg" },
-    { path: "/icons/icon-pinterest.svg" },
+    { path: <FaFacebookF size={20} /> },
+    { path: <FaLinkedinIn size={20} /> },
+    { path: <FaTwitter size={20} /> },
+    { path: <FaYoutube size={20} /> },
   ];
 
   const quickLinks = [
     { link: "Home" },
-    { link: "About Us" },
-    { link: "Projects" },
+    { link: "Course" },
     { link: "Resources" },
   ];
 
@@ -21,25 +25,17 @@ export function Footer() {
     { link: "History" },
     { link: "Mission/Vision" },
     { link: "Our Team" },
-    { link: "Partners" },
-  ];
-
-  const projectLinks = [
-    { link: "Project-1" },
-    { link: "Project-2" },
-    { link: "Project-3" },
-    { link: "Project-4" },
   ];
 
   return (
-    <footer className="bg-footerBackgroundColor">
-      <div className="flex flex-col lg:flex-row justify-between p-10 bg-red-800">
+    <footer className="bg-gray-300">
+      <div className="flex flex-col lg:flex-row justify-between p-10 bg-white">
         <div className="flex flex-col items-center justify-between space-y-5 md:items-start w-full md:w-1/4 mb-10 md:mb-0">
           <div className="">
             <Link href="/">
               <a>
                 <Image
-                  src="/icons/logo-white.svg"
+                  src="/images/vercel.svg"
                   className=""
                   alt=""
                   width={100}
@@ -57,22 +53,14 @@ export function Footer() {
             {socialMediaLinks.map((paths, index) => {
               return (
                 <Link key={index} href="#">
-                  <a>
-                    <Image
-                      src={paths.path}
-                      alt=""
-                      className="h-8 rounded-full"
-                      width={25}
-                      height={25}
-                    />
-                  </a>
+                  <a>{paths.path}</a>
                 </Link>
               );
             })}
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 w-full lg:w-3/4">
-          <div className="flex flex-col space-y-2 text-white">
+        <div className="grid grid-cols-2 gap-6 lg:grid-cols-3 w-full lg:w-3/4">
+          <div className="flex flex-col space-y-2 text-black">
             <h1 className="text-lg font-bold">Quick Links</h1>
             {quickLinks.map((links, index) => {
               return (
@@ -85,7 +73,7 @@ export function Footer() {
             })}
           </div>
 
-          <div className="flex flex-col space-y-2 text-white">
+          <div className="flex flex-col space-y-2 text-black">
             <h1 className="text-lg font-bold">About Us</h1>
             {aboutUsLinks.map((links, index) => {
               return (
@@ -98,41 +86,30 @@ export function Footer() {
             })}
           </div>
 
-          <div className="flex flex-col space-y-2 text-white">
-            <h1 className="text-lg font-bold">Projects</h1>
-            {projectLinks.map((links, index) => {
-              return (
-                <Link key={index} href="#">
-                  <a className="text-copyrightTextColor hover:text-ecffSecondary">
-                    {links.link}
-                  </a>
-                </Link>
-              );
-            })}
-          </div>
-
-          <div className="flex flex-col space-y-2 text-white">
+          <div className="flex flex-col space-y-2 text-black float-right">
             <h1 className="text-xl font-bold">Contact Info</h1>
             <p href="#" className="text-copyrightTextColor">
-              Environment and Coffee forest forum,P.O.Box:28153,Addis Ababa,
-              Ethiopia
+              Jobs finder
             </p>
             <p className="text-copyrightTextColor hover:text-ecffSecondary">
-              +251-116-733-707
+              +251-934-73-10-38
+            </p>
+            <p className="text-copyrightTextColor hover:text-ecffSecondary">
+              +251-934-73-10-38
             </p>
             <Link href="mailto:info@ecff.org.et">
               <a className="text-copyrightTextColor hover:text-ecffSecondary">
-                info@ecff.org.et
+                yafetaddisu123@gmail.com
               </a>
             </Link>
           </div>
         </div>
       </div>
       <div className="flex justify-between items-center footerBackgroundColorDark h-8 mx-10">
-        <div className="text-copyrightTextColor md:block">&copy;ECFF 2022.</div>
+        <div className="text-copyrightTextColor md:block">&copy;Hulu 2022.</div>
 
         <div className="text-copyrightTextColor md:block">
-          Powered by M.A.D Technologies
+          Powered by Hulu Media
         </div>
       </div>
     </footer>
