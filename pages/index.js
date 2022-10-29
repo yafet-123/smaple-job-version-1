@@ -10,12 +10,6 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <LatestJobs />
-      <SearchJobs />
-      <News />
-      <History />
-      <MissionAndVision />
-      <Advice />
     </div>
   );
 }
