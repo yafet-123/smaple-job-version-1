@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-export function AboutUs() {
+export function History() {
   return (
     <div className="bg-[#e0ded8] w-full h-full lg:h-screen flex flex-col md:flex-row justify-between items-center mt-5">
       <div className="w-full md:w-1/2 pt-20 md:pt-20 px-20">

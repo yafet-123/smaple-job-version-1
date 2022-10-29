@@ -1,4 +1,4 @@
-import { AboutUs } from "../components/AboutUs";
+import { History } from "../components/History";
 import { Advice } from "../components/Advice";
 import { Hero } from "../components/Hero";
 import { LatestJobs } from "../components/LatestJobs";
@@ -13,7 +13,7 @@ export default function Home() {
       <LatestJobs />
       <News />
       <Advice />
-      <AboutUs />
+      <History />
     </div>
   );
 }
