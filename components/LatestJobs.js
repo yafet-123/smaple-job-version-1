@@ -5,7 +5,7 @@ import { LatestJobsList } from "../data/LatestJobs";
 export function LatestJobs() {
   return (
     <section className="w-full h-[50rem] p-20 bg-gray-100 flex flex-col">
-      <div className="flex justify-around items-center">
+      <div className="flex justify-between items-center">
         <div className="flex items-center font-bold text-xl md:text-2xl lg:text-3xl text-black capitalize">
           <AiOutlineClockCircle size={30} />
           <span className="ml-5">Latest Jobs</span>
@@ -17,29 +17,30 @@ export function LatestJobs() {
         </Link>
       </div>
 
-      <div className="max-w-3xl mx-auto bg-gray-200 w-full h-[40rem] border rounded-lg mt-10 shadow-2xl shadow-sky-200 flex flex-col overflow-y-scroll">
+      <div className="max-w-7xl mx-auto bg-gray-200 w-full h-[40rem] border rounded-lg mt-10 shadow-2xl shadow-sky-200 flex flex-col overflow-y-scroll">
         {LatestJobsList.map((data, index) => (
-          <div
+          <a
+            href="/"
             className="flex justify-around items-center mb-5 even:bg-white px-10 py-5 group"
             key={index}
           >
             <div className="flex flex-col w-1/2">
-              <h1 className="font-bold text-sm md:text-lg lg:text-xl group-hover:text-2xl text-blue-500 group-hover:text-green-900">
+              <h1 className="font-bold text-sm md:text-lg lg:text-xl text-blue-500 group-hover:text-orange-500">
                 {data.job}
               </h1>
-              <h1 className="font-light text-xs md:text-sm lg:text-lg group-hover:text-xl text-blue-500 group-hover:text-green-900">
+              <h1 className="font-light text-xs md:text-sm lg:text-lg text-blue-500 group-hover:text-orange-500">
                 {data.company}
               </h1>
             </div>
             <div className="flex flex-col w-1/2">
-              <h1 className="font-light text-xs md:text-sm lg:text-lg group-hover:text-2xl text-black text-right group-hover:text-yellow-900">
+              <h1 className="font-light text-xs md:text-sm lg:text-lg text-blue-500 text-right group-hover:text-orange-500">
                 {data.createDate}
               </h1>
-              <h1 className="font-light text-xs md:text-sm lg:text-lg group-hover:text-2xl text-black text-right group-hover:text-yellow-900">
+              <h1 className="font-light text-xs md:text-sm lg:text-lg text-blue-500 text-right group-hover:text-orange-500">
                 {data.location}
               </h1>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
