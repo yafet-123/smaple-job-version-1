@@ -9,13 +9,13 @@ export function SearchJobs() {
   const [jobs, setJobs] = useState("category");
   console.log(jobs);
   return (
-    <div className="flex flex-col w-full h-full py-20 px-7 md:px-32">
-      <h1 className="font-light text-2xl md:text-3xl lg:text-4xl capitalize mb-5 text-center md:text-left">
+    <div className="flex flex-col w-full h-full py-20 px-0 md:px-32">
+      <h1 className="font-light text-2xl md:text-3xl lg:text-4xl capitalize mb-5 text-center md:text-left px-7 md:px-0">
         Search and Find Jobs in Ethiopia
       </h1>
-      <hr className="w-full bg-gray-200 mb-5" />
+      <hr className="w-full bg-gray-200 mb-5 px-7 md:px-0" />
       <div className="flex w-screen h-full lg:h-[45rem]">
-        <div className="flex-1 px-5 border rounded-xl shadow-2xl shadow-sky-200 border-slate-300  p-3">
+        <div className="border rounded-xl shadow-2xl shadow-sky-200 border-slate-300">
           <div className="w-full h-full overflow-y-scroll">
             {jobs == "category" ? (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-20 py-10">
@@ -54,7 +54,7 @@ export function SearchJobs() {
         </div>
 
         <ul className="mt-5">
-          <butliton
+          <li
             onClick={(e) => setJobs("category")}
             className={
               jobs == "category"
@@ -66,7 +66,7 @@ export function SearchJobs() {
             <span className="hidden lg:inline-flex text-xl ml-3">
               Jobs by Category
             </span>
-          </butliton>
+          </li>
           <li
             onClick={(e) => setJobs("location")}
             className={
