@@ -14,8 +14,8 @@ export function SearchJobs() {
         Search and Find Jobs in Ethiopia
       </h1>
       <hr className="w-full bg-gray-200 mb-5 px-7 md:px-0" />
-      <div className="flex w-screen h-full lg:h-[45rem]">
-        <div className="border rounded-xl shadow-2xl shadow-sky-200 border-slate-300">
+      <div className="flex w-full h-full lg:h-[45rem]">
+        <div className="flex-1 border rounded-xl shadow-2xl shadow-sky-200 border-slate-300 p-5">
           <div className="w-full h-full overflow-y-scroll">
             {jobs == "category" ? (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-20 py-10">

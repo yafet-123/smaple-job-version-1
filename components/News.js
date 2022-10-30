@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export function News() {
   return (
-    <div className="bg-white w-full h-full p-20 grid grid-cols-1 lg:grid-cols-2 gap-5 mb-10">
+    <div className="bg-white w-full h-full md:p-20 grid grid-cols-1 lg:grid-cols-2 gap-5 mb-10">
       <div className="news-background w-full h-[30rem] md:h-full border rounded-xl"></div>
-      <div className="flex flex-col">
+      <div className="flex flex-col px-10 md:px-0">
         <h1 className="text-center w-full uppercase text-7xl font-medium mt-10">
           job news
         </h1>
