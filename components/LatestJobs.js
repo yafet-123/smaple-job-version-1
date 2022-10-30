@@ -17,7 +17,7 @@ export function LatestJobs() {
         </Link>
       </div>
 
-      <div className="max-w-7xl mx-auto bg-gray-200 w-full h-[40rem] border rounded-lg mt-10 shadow-2xl shadow-sky-200 flex flex-col overflow-y-scroll">
+      <Link className="max-w-7xl mx-auto bg-gray-200 w-full h-[40rem] border rounded-lg mt-10 shadow-2xl shadow-sky-200 flex flex-col overflow-y-scroll">
         {LatestJobsList.map((data, index) => (
           <a
             href="/"
@@ -42,7 +42,7 @@ export function LatestJobs() {
             </div>
           </a>
         ))}
-      </div>
+      </Link>
     </section>
   );
 }
