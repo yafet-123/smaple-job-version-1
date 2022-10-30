@@ -11,6 +11,11 @@ export default function Home() {
     <div className="">
       <Hero />
       <LatestJobs />
+      <SearchJobs />
+      <History />
+      <MissionAndVision />
+      <News />
+      <Advice />
     </div>
   );
 }
