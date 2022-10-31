@@ -25,7 +25,7 @@ export function History() {
         </div>
         <div className="flex flex-row mt-10 md:mt-0 lg:mb-40">
           <div className="lg:inline-flex relative w-96 h-96 border rounded-full bg-transparent lg:bg-amber-700">
-            <div className="lg:absolute lg:bottom-1/4 lg:left-2/4 news-background w-96 h-96 border rounded-full mx-auto lg:mx-0"></div>
+            <div className="lg:absolute lg:bottom-1/4 lg:left-2/4 about-background w-96 h-96 border rounded-full mx-auto lg:mx-0"></div>
           </div>
         </div>
       </div>

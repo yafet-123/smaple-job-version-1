@@ -140,7 +140,7 @@ export function Navbar() {
                   <Link key={index} href={main.path}>
                     <a target="_blank" rel="noreferrer">
                       <div
-                        className={`${main.style} text-white rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300`}
+                        className={`${main.style} text-white rounded-full shadow-lg shadow-gray-400 p-6 hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center`}
                       >
                         {main.icon}
                       </div>

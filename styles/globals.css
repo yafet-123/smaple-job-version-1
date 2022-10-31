@@ -22,3 +22,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.about-background {
+  background-image: url("../public/images/aboutBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
