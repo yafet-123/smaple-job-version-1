@@ -49,8 +49,8 @@ export function Navbar() {
   ];
 
   return (
-    <div className="bg-white w-full h-24 md:h-32 ">
-      <div className="flex flex-row justify-between items-center px-5 md:px-20">
+    <div className="bg-white w-full h-32 ">
+      <div className="flex flex-row justify-between items-center px-11 md:px-20">
         <Image src="/images/vercel.svg" width={100} height={100} />
         <div className="flex flex-1 flex-row items-center">
           <div className="hidden md:flex items-center">
