@@ -19,10 +19,11 @@ export function Navbar() {
     {
       path: "",
       icon: <FaFacebookF />,
+      style: "bg-blue-900",
     },
-    { path: "", icon: <FaTwitter /> },
-    { path: "", icon: <FaLinkedinIn /> },
-    { path: "", icon: <FaYoutube /> },
+    { path: "", icon: <FaTwitter />, style: "bg-blue-500" },
+    { path: "", icon: <FaLinkedinIn />, style: "bg-blue-700" },
+    { path: "", icon: <FaYoutube />, style: "bg-red-500" },
   ];
 
   const handleNav = () => {
@@ -138,7 +139,9 @@ export function Navbar() {
                 {MainList.map((main, index) => (
                   <Link key={index} href={main.path}>
                     <a target="_blank" rel="noreferrer">
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <div
+                        className={`${main.style} text-white rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300`}
+                      >
                         {main.icon}
                       </div>
                     </a>
