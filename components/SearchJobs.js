@@ -71,7 +71,7 @@ export function SearchJobs() {
             onClick={(e) => setJobs("location")}
             className={
               jobs == "location"
-                ? "py-3 bg-white px-6 border border-slate-300 flex items-center hover:text-blue-400 border-x-transparent z-10 -ml-1"
+                ? "py-3 bg-white px-6 border border-slate-300 flex items-center hover:text-blue-400 border-x-white -ml-1"
                 : "py-3 bg-gray-200 px-6 border border-slate-300 flex items-center hover:bg-white hover:text-blue-400"
             }
           >
