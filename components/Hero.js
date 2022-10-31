@@ -9,25 +9,7 @@ import {
 import { CiTwitter } from "react-icons/ci";
 export function Hero() {
   return (
-    <div className="hero-background w-full h-[30rem] lg:h-[40rem] flex justify-between items-center">
-      <div className="hidden md:flex flex-col w-14 pt-56">
-        <div className="h-full bg-blue-900 text-white px-5 hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center">
-          <FaFacebookF size={20} />
-        </div>
-
-        <div className="h-full bg-blue-500 text-white px-5 hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center">
-          <FaTwitter size={20} />
-        </div>
-
-        <div className="h-full bg-blue-700 text-white px-5 hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center">
-          <FaLinkedinIn size={20} />
-        </div>
-
-        <div className="h-full bg-red-500 text-white px-5  hover:w-20 transition-all duration-1000 transform-cpu cursor-pointer hover:brightness-110 flex items-center justify-center">
-          <FaYoutube size={20} />
-        </div>
-      </div>
-
+    <div className="hero-background w-full h-[30rem] lg:h-[40rem] flex justify-center items-center">
       <div className="flex flex-col w-full md:w-[40rem] h-96 px-5">
         <h1 className="text-3xl mb-5 md:text-4xl lg:text-5xl">
           Better Job. Better Talent
