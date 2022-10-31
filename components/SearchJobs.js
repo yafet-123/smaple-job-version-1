@@ -13,12 +13,12 @@ export function SearchJobs() {
       <h1 className="font-light text-2xl md:text-3xl lg:text-4xl capitalize mb-5 text-center md:text-left px-7 md:px-0">
         Search and Find Jobs in Ethiopia
       </h1>
-      <hr className="w-full bg-gray-200 mb-5 px-7 md:px-0" />
-      <div className="flex w-full h-full lg:h-[45rem]">
-        <div className="md:flex-1 border rounded-xl shadow-2xl shadow-sky-200 border-slate-300 p-5">
+      <hr className="w-full bg-gray-200 mb-5" />
+      <div className="flex w-full h-full lg:h-[45rem] p-5">
+        <div className="flex-1 border rounded-xl shadow-2xl shadow-sky-200 border-slate-300 p-5">
           <div className="w-full h-full overflow-y-scroll">
             {jobs == "category" ? (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-20 py-10">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
                 {LatestJobsList.map((data, index) => (
                   <div
                     className="flex justify-between items-center mb-3 group hover:bg-gray-200 px-4 py-2"
@@ -34,7 +34,7 @@ export function SearchJobs() {
                 ))}
               </div>
             ) : (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-20 py-10">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
                 {JobsByLocation.map((data, index) => (
                   <div
                     className="flex justify-between items-center mb-3 group hover:bg-gray-200 px-4 py-2"
