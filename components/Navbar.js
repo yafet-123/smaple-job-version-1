@@ -51,22 +51,24 @@ export function Navbar() {
   return (
     <div className="bg-white w-full h-24 md:h-32 ">
       <div className="flex flex-row justify-between items-center px-20">
-        <div className="flex-1 hidden md:flex flex-row items-center">
+        <div className="flex flex-1 flex-row items-center">
           <Image src="/images/vercel.svg" width={100} height={100} />
-          {NavbarTopic.map((navbar, index) => (
-            <Link key={index} href={navbar.path}>
-              <a
-                onClick={(e) => setNavabarText(navbar.text)}
-                className={
-                  navbar.text == NavabarText
-                    ? "border-b-4 border-blue-800 ml-20 text-2xl font-light text-black"
-                    : "ml-20 text-2xl font-light text-black hover:border-b-4 border-blue-800"
-                }
-              >
-                {navbar.text}
-              </a>
-            </Link>
-          ))}
+          <div className="hidden md:flex items-center">
+            {NavbarTopic.map((navbar, index) => (
+              <Link key={index} href={navbar.path}>
+                <a
+                  onClick={(e) => setNavabarText(navbar.text)}
+                  className={
+                    navbar.text == NavabarText
+                      ? "border-b-4 border-blue-800 ml-20 text-2xl font-light text-black"
+                      : "ml-20 text-2xl font-light text-black hover:border-b-4 border-blue-800"
+                  }
+                >
+                  {navbar.text}
+                </a>
+              </Link>
+            ))}
+          </div>
         </div>
         <div className="hidden md:flex justify-between items-center">
           <div className="py-3 px-10 border rounded-2xl bg-gray-100 mr-10 text-center text-blue-800 text-xl font-medium hover:bg-blue-800 hover:text-gray-100">
@@ -77,7 +79,7 @@ export function Navbar() {
           </div>
         </div>
       </div>
-      <div onClick={handleNav} className="md:hidden float-right px-20 mt-10">
+      <div onClick={handleNav} className="md:hidden float-right px-20">
         <AiOutlineMenu size={30} />
       </div>
       <div

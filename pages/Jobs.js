@@ -10,16 +10,16 @@ export default function SearchJobs() {
   const [jobs, setJobs] = useState("category");
   console.log(jobs);
   return (
-    <section className="flex flex-col w-full h-full py-20 px-7 md:px-32 bg-gray-200">
+    <section className="flex flex-col w-full h-full py-20 px-0 md:px-32 bg-gray-200">
       <h1 className="font-light text-2xl md:text-3xl lg:text-4xl capitalize mb-5 text-center md:text-left">
         Search and Find Jobs in Ethiopia
       </h1>
       <hr className="w-full bg-gray-200 mb-5" />
-      <div className="flex w-full h-full lg:h-[45rem] bg-white p-3 border rounded-xl">
-        <div className="flex-1 px-5 border rounded-xl shadow-2xl shadow-sky-200 border-slate-300  p-3">
+      <div className="flex w-full h-full lg:h-[45rem] bg-white border rounded-xl p-2 md:p-3">
+        <div className="flex-1 border rounded-xl shadow-2xl shadow-sky-200 border-slate-300 p-5">
           <div className="w-full h-full overflow-y-scroll">
             {jobs == "category" && (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-20 py-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
                 {LatestJobsList.map((data, index) => (
                   <div
                     className="flex justify-between items-center mb-3 group hover:bg-gray-200 px-4 py-2"
@@ -37,10 +37,10 @@ export default function SearchJobs() {
             )}
 
             {jobs == "location" && (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-20 py-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
                 {JobsByLocation.map((data, index) => (
                   <div
-                    className="flex justify-between items-center mb-3 group hover:bg-gray-200 px-4 py-2"
+                    className="w-full flex justify-between items-center mb-3 group hover:bg-gray-200 px-4 py-2"
                     key={index}
                   >
                     <h1 className="font-normal text-sm md:text-lg lg:text-xl capitalize group-hover:text-orange-500">
@@ -55,7 +55,7 @@ export default function SearchJobs() {
             )}
 
             {jobs == "latest" && (
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 px-20 py-10">
+              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 py-10">
                 {LatestJobsList.map((data, index) => (
                   <div
                     className="flex justify-between items-center mb-3 group hover:bg-gray-200 px-4 py-2"
@@ -83,7 +83,7 @@ export default function SearchJobs() {
             )}
 
             {jobs == "government" && (
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 px-20 py-10">
+              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 py-10">
                 {GovernmentJobs.map((data, index) => (
                   <div
                     className="flex justify-between items-center mb-3 group hover:bg-gray-200 px-4 py-2"
